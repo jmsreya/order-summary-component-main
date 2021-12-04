@@ -1,0 +1,133 @@
+:root {
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desatblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    background-color: var(--paleblue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.card {
+    height: 650px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0 10px 10px rgba(31, 47, 86, 0.192));
+}
+
+.img-box {
+    height: 200px;
+}
+
+.hero-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.info-box {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--darkblue);
+}
+
+.order-summary {
+    color: var(--desatblue);
+    line-height: 2;
+    font-weight: 500;
+}
+
+.annual-plan {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    margin: 0px 30px;
+    padding: 10px;
+    background-color: var(--verypaleblue);
+    border-radius: 10px;
+}
+
+.music-icon {
+    margin-top: 10px;
+}
+
+.price-box {
+    grid-column: 2;
+    margin-left: 10px;
+}
+
+h4 {
+    margin: 10px 0 0 0;
+    color: var(--darkblue);
+}
+
+.price {
+    margin: 5px 0 0 0;
+    color: var(--desatblue);
+}
+
+.change-plan {
+    grid-column: 4;
+    margin: 20px 0 0 35px;
+    font-size: .8rem;
+    color: var(--desatblue);
+}
+
+.change-plan:hover {
+    color: var(--darkblue);
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+button {
+    background-color: var(--brightblue);
+    height: 3rem;
+    width: 80%;
+    border: none;
+    border-radius: 15px;
+    color: var(--verypaleblue);
+    font-weight: 900;
+    filter: drop-shadow(0 10px 10px rgba(31, 47, 86, 0.322));
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+.cancel {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    text-decoration: none;
+    color: var(--desatblue);
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.cancel:hover {
+    color: var(--darkblue);
+}
